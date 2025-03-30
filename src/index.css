@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", SansSerif, sans-serif;
+}
+
+.app-container {
+
+}
+
+.app-container header {
+    font-size: 18px;
+    padding: 15px 20px;
+    border-bottom: 1px solid darkgray;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;}
+
+section .input-form {
+    width: 800px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+section .input-form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+
+section .input-form form input {
+    width: 275px;
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+section .input-form form button {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border: 1px solid dimgray;
+    font-size: 18px;
+    background: limegreen;
+    transition: .2s ease;
+}
+
+section .input-form form button:hover {
+    transition: .2s ease;
+    border-radius: 23px;
+    background: hsl(120, 61%, 55%);
+    cursor: pointer;
+}
+
+section .student-list {
+    width: 800px;
+    height: auto;
+    max-height: 475px;
+    border-top: none;
+    overflow: auto;
+}
+
+.student {
+    width: 800px;
+    height: 50px;
+    border: 1px solid darkgray;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.student p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student p button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: white;
+    outline: none;
+    border: 1px solid darkgray;
+    transition: .2s ease;
+}
+
+.student p button:hover {
+    background: hsl(0, 0%, 95%);
+    border-radius: 15px;
+    transition: .2s ease;
+    cursor: pointer;
+}
