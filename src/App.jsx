@@ -19,7 +19,7 @@ const App = () => {
         setStudentEmail(event.target.value);
     }
 
-    const deleteStudent = async (id) => {
+    const deleteStudentData = async (id) => {
         const DELETE_API_URL = API_URL + `/${id}`;
 
         console.log(DELETE_API_URL);
@@ -84,10 +84,6 @@ const App = () => {
         }
     }
 
-    // useEffect(() => {
-    //     sendStudentData();
-    // }, []);
-
     useEffect(() => {
         getStudentData();
     }, [dataChanged]);
@@ -128,7 +124,7 @@ const App = () => {
                             <Student
                                 student={student}
                                 index={index}
-                                deleteStudent={deleteStudent}
+                                deleteStudent={deleteStudentData}
                             />
                         ))
                         : ''}
